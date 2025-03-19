@@ -32,7 +32,7 @@ cd credit-card-project
 
 ## 📷 Ekran Görüntüsü    
 
-![Kredi Kartı UI](assets/credit-cart-project.JPG)   
+![Kredi Kartı UI](/assets/credit-cart-project.JPG)   
 
 ## 🤝 Katkıda Bulun   
 🚀 Projeye katkıda bulunmak istersen pull request gönderebilirsin!   
