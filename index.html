@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    
+    <title>Credit Card</title>
+</head>
+<body>
+        <div class="container mx-auto p-8 max-w-screen-md bg-white rounded-xl shadow-xl">
+
+            <div id="front" class="front p-4 bg-gradient-to-r h-96 from-gray-800 to-gray-800 rounded-xl shadow-lg transition-all">
+                <div class="image flex justify-between items-center">
+                    <img src="chip.png">
+                    <img src="visa.png">
+                </div>
+
+                <div id="card-number-box" class="mt-2 my-4 text-white text-3xl font-semibold">
+                    ##### #### #### #####
+                </div>
+                <div class="flex flex-wrap justify-between">
+                    <div class="box-content">
+                        <div class="text-white text-2xl">CARDHOLDER</div>
+                        <div id="cardholder-name" class="text-white text-sm">Cardholder</div>
+                        <div class="text-white text-2xl mt-6">DATE</div>
+                        <div class="">
+                            <span id="exp-month" class="text-white text-sm">MM</span>
+                            <span id="exp-year" class="text-white text-sm">YY</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="back" style="display: none;" class="back p-4 bg-gradient-to-r h-96 from-gray-800 to-gray-800 rounded-xl shadow-lg transition">
+
+                <div class="h-10 bg-black w-full mt-4"></div>
+                <div class="box mt-4">
+                    <span class="text-white">CVV</span>
+                    <div id="cvv-box" class="bg-white h-12 p-2 mt-2 rounded-xl"></div>
+                    <img src="visa.png" class="mt-22">
+                </div>
+
+            </div>
+
+            <form>
+                <div class="mt-8">
+                    <span class="text-gray-600">CARD NUMBER</span>
+                    <input id="card-number-input" type="text" maxlength="16" class="bg-slate-600 p-2 w-full text-white border-solid border-b-gray-950 rounded-xl">
+                </div>
+                <div class="mt-4">
+                    <span class="text-gray-600">CARDHOLDER</span>
+                    <input id="cardholder-input" type="text" maxlength="16" class="bg-slate-600 p-2 w-full text-white border-solid border-b-gray-950 rounded-xl">
+                </div>
+                <div class="mt-4">
+                    <span class="text-gray-600">MONTH</span>
+                    <select id="month-input" class="bg-slate-600 p-2 w-full text-white border-solid border-b-gray-950 rounded-xl">
+                        <option value="Month" selected disabled>MONTH</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="mt-4">
+                    <span class="text-gray-600">YEAR</span>
+                    <select id="year-input" class="bg-slate-600 p-2 w-full text-white border-solid border-b-gray-950 rounded-xl">
+                        <option value="Year" selected disabled>YEAR</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        
+                    </select>
+                </div>
+
+                <div class="mt-4">
+                    <span class="text-gray-600">CVV</span>
+                    <input id="cvv-input" type="text" maxlength="3" class="bg-slate-600 p-2 w-full text-white border-solid border-b-gray-950 rounded-xl">
+                </div>
+                <div class="mt-4">
+                    <span class="text-gray-600"></span>
+                    <input type="submit" value="Submit" class="bg-slate-600 p-2 w-full text-white border-solid border-b-gray-950 rounded-xl">
+                </div>
+
+                
+            </form>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
